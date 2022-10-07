@@ -1,0 +1,34 @@
+.app-wrapper {
+  display: grid;
+  grid-template-areas:
+    "h h"
+    "n c";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+  margin: 0 auto;
+  max-width: 1010px;
+}
+
+.header {
+  background-color: chartreuse;
+  grid-area: h;
+  display: flex;
+  justify-content: flex-start;
+}
+.header img {
+  width: 150px;
+  height: 100px;
+}
+.nav {
+  background-color: chartreuse;
+  grid-area: n;
+}
+
+.content {
+  grid-area: c;
+}
+.content img {
+  width: 100%;
+  height: 300px;
+}
